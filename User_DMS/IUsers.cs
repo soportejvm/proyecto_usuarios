@@ -25,11 +25,11 @@ namespace User_DMS
         User ModificarUser(User userAModificar);
 
         [OperationContract]
-        [WebInvoke(Method = "DELETE", UriTemplate = "User/{codigo}", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "DELETE", UriTemplate = "Users/{codigo}", ResponseFormat = WebMessageFormat.Json)]
         void EliminarUser(string codigo);
 
         [OperationContract]
-        [WebInvoke(Method = "SELECT", UriTemplate = "User", ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "SELECT", UriTemplate = "Users", ResponseFormat = WebMessageFormat.Json)]
         List<User> ListarUsers();
     }
 }
